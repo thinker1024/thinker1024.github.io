@@ -1,0 +1,24 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  topic:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "topic"
+    values:
+      layout: "topic"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

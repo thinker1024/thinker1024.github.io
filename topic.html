@@ -1,0 +1,14 @@
+---
+layout: default
+title: Topic
+---
+<h1>Topics</h1>
+
+<ul>
+  {% for topic in site.topic %}
+    <li>
+      <h2><a href="{{ topic.url }}">{{ topic.topic }}</a></h2>
+      <p>{{ topic.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
